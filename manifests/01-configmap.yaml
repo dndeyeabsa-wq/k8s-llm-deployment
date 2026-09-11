@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: llm-config
+  namespace: llm-app
+data:
+  OLLAMA_HOST: "0.0.0.0"
+  OLLAMA_PORT: "11434"
+  OLLAMA_BASE_URL: "http://ollama-service:11434"
+  WEBUI_PORT: "8080"
+  WEBUI_NAME: "Deen Companion LLM"
+  ENABLE_SIGNUP: "true"
